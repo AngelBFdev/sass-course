@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACF,UAAU,ECDF,OAAO;EDEf,KAAK,ECDE,OAAO;EDEd,QAAG;IACD,UAAU,ECJJ,OAAO;EDKf,YAAO;IACL,UAAU,ECNJ,OAAO;IDOb,MAAM,EAAE,oBAAmB;;;ICF7B,qBAAqB,EDKJ,IAAI;ICJrB,iBAAiB,EDIA,IAAI;ICHrB,aAAa,EDGI,IAAI;;AEVvB,MAAM;EACJ,UAAU,EDDF,OAAO",
+"sources": ["_main.sass","_helpers.sass","_footer.sass"],
+"names": [],
+"file": "style.css"
+}

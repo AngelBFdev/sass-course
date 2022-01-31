@@ -1,0 +1,18 @@
+body {
+  background: #c2e884;
+  color: #84ddff; }
+  body div {
+    background: #c2e884; }
+  body article {
+    background: #c2e884;
+    border: 0.1rem solid #84ddff;
+    /* this is the correct way to call the function
+     * border-radius */
+    -webkit-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    border-radius: 1rem; }
+
+footer {
+  background: #c2e884; }
+
+/*# sourceMappingURL=style.css.map */
