@@ -1,0 +1,20 @@
+.main{
+
+  a{
+    color:gray;
+
+    &:hover{
+      color:red;
+    }
+
+    font:{
+      family: arial;
+      size: 1rem;
+    }
+  }
+  // & is equal to the name of the parent
+  // in this case .main
+  &:hover~&-1{
+    color:red;
+  }
+}
