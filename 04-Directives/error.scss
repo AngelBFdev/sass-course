@@ -1,0 +1,23 @@
+$colors:(
+  red: #ff0000,
+  black: #000000
+);
+
+@function style($color1) {
+  // check if the key exist in the dictionary
+  @if map-has-key($colors, $color1) {
+    // return the value of the key that match
+    @return map-get($colors, $color1);
+  }
+
+  // Error message in case of not existing key
+  @error "Invalid color: '#{$color1}'";
+}
+
+.h1{
+  color:style(red);
+}
+.p {
+  // This will make an error
+  color: style(white);
+}
