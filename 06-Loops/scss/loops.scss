@@ -1,0 +1,56 @@
+$headers: h1, h2, h3, h4, h5, h6;
+$fontSize: 5.5rem, 4.5rem, 4rem, 3.5rem, 3rem, 2.5rem;
+
+$index: 1;
+
+$headersMap: (
+  h1: 5.5rem,
+  h2: 5rem,
+  h3: 4.5rem
+);
+
+$len: length($headers);
+
+@for $i from 1 through 6{
+  h#{$i} { font-size: 5.5rem;}
+}
+
+@for $i from $len through 1{
+  #{nth($headers, $i)} {
+    font-size: nth($fontSize,$i);
+    line-height: nth($fontSize,$i)+1;
+  }
+}
+
+@each $head in h1, h2, h3, h4, h5, h6 {
+  #{$head}{
+    font-size: 5.5rem;
+  }
+}
+
+@each $head in $headers {
+  #{$head}{
+    font-size: 5.5rem;
+  }
+}
+
+@each $head, $font, $color in (h1, 5.5rem, red),
+                      (h2, 5rem, blue) {
+  #{$head}{
+    font-size: $font;
+    color: $color;
+  }
+}
+
+@each $head, $font in $headersMap {
+  #{$head}{
+    font-size: $font;
+  }
+}
+
+@while $index<=$len {
+  #{nth($headers, $index)}{
+    font-size: nth($fontSize, $index);
+  }
+  $index: $index + 1;
+}
