@@ -1,0 +1,39 @@
+$type: monster;
+
+p {
+  @if $type == human{
+    color: blue;
+  } @else if $type == elf {
+    color: red;
+  } @else if $type == monster {
+    color: white;
+  } @else {
+    color: black;
+  }
+}
+
+@mixin  test($condition){
+  $color: if($condition, blue, red);
+  color: $color
+}
+
+.firstClass {
+  @include test(true);
+}
+
+.secondClass {
+  @include test(false);
+}
+
+@mixin txt($weight){
+  color: white;
+  @if $weight == bold { font-weight: bold; }
+}
+
+.txt1{
+  @include txt(none);
+}
+
+.txt2{
+  @include txt(bold);
+}
