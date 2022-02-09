@@ -1,0 +1,43 @@
+$headers: h1, h2, h3, h4;
+
+$fontSize: 20px, 30px, 40px, 50px;
+
+$color1: red;
+
+$color2: blue;
+
+$color3: green;
+
+$color4: orange;
+
+$margins: 20px, 40px, 60px, 80px;
+
+$len: length($headers);
+
+$headersMap:(
+  h1: $color1,
+  h2: $color2,
+  h3: $color3,
+  h4: $color4
+);
+
+$index: 1;
+
+@for $i from 1 through $len{
+  #{nth($headers, $i)} {
+    font-size: nth($fontSize,$i);
+  }
+}
+
+@each $head, $color in $headersMap {
+  #{$head} {
+    color: $color;
+  }
+}
+
+@while $index<=$len {
+  #{nth($headers, $index)}{
+    margin-left: nth($margins, $index);
+  }
+  $index: $index + 1;
+}
