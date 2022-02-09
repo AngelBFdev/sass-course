@@ -1,0 +1,28 @@
+$type: fresco;
+
+$color1: white;
+
+$border: 1px solid black;
+
+$text-align: center;
+
+$margin: 15px;
+
+$height: 75px;
+
+$background-color1: hotpink;
+
+$background-color2: blue;
+
+$background-color3: orange;
+
+p {
+  margin: $margin;
+  height: $height;
+  border: $border;
+  text-align: $text-align;
+  color: $color1;
+  @if $type == fresco { background-color: $background-color1;}
+  @else if $type == TCS { background-color: $background-color2;}
+  @else { background-color: $background-color3;}
+}
