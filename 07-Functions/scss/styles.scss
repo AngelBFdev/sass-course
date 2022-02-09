@@ -1,0 +1,69 @@
+$input-number: 6.5;
+$input-string: "fresco";
+$input-array1: 1 2 3;
+$input-array2: 4 5 6;
+$input-color1: rgb(0, 0, 200);
+$output-number-floor: "";
+$output-string-upper: "";
+$output-array1-length: "";
+$output-arrayjoin: "";
+$output-color1-lighten: "";
+
+// required styles for input/output
+
+body {
+  font-family: Sans-Serif;
+  margin: 0 20px;
+}
+
+section {
+  padding: 2px;
+}
+
+.color-block::after {
+  content: "";
+
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.input-number::after {
+  content: "#{$input-number}";
+}
+
+.input-string::after {
+  content: "#{$input-string}";
+}
+
+.input-array1::after {
+  content: "#{$input-array1}";
+}
+
+.input-array2::after {
+  content: "#{$input-array2}";
+}
+
+.input-color1::after {
+  background: $input-color1;
+}
+
+.output-number-floor::after {
+  content: "#{$output-number-floor}";
+}
+
+.output-string-upper::after {
+  content: "#{$output-string-upper}";
+}
+
+.output-array1-length::after {
+  content: "#{$output-array1-length}";
+}
+
+.output-array1-and-array2-join::after {
+  content: "#{$output-arrayjoin}";
+}
+
+.output-color1-lighten::after {
+  background: $output-color1-lighten;
+}
