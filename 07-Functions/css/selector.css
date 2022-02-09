@@ -1,0 +1,10 @@
+.foo-suffix, .bar-suffix {
+  color: red; }
+
+.foo .btn, .bar .btn {
+  color: red; }
+
+.foo.btn.bar, .bar.btn {
+  color: red; }
+
+/*# sourceMappingURL=selector.css.map */

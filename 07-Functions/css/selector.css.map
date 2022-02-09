@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,wBAA2C;EACzC,KAAK,EAAC,GAAG;;AAIX,oBAAsC;EACpC,KAAK,EAAC,GAAG;;AAIX,sBAA2C;EACzC,KAAK,EAAC,GAAG",
+"sources": ["../scss/selector.scss"],
+"names": [],
+"file": "selector.css"
+}

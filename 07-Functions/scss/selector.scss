@@ -1,0 +1,13 @@
+#{selector-append(".foo, .bar", "-suffix")}{
+  color:red;
+}
+
+// this add a space
+#{selector-nest(".foo, .bar", ".btn")}{
+  color:red;
+}
+
+// understand duplicates
+#{selector-unify(".foo, .bar", ".btn.bar")}{
+  color:red;
+}
