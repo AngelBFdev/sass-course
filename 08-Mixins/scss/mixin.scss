@@ -1,0 +1,19 @@
+@mixin arialFont() {
+  font: {
+    family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    size: 10px;
+    style: normal;
+    weight: bold;
+  }
+  color: blue;
+  line-height: normal;
+}
+
+body{
+  .heading{
+    @include arialFont();
+  }
+  .paragraph{
+    @include arialFont();
+  }
+}

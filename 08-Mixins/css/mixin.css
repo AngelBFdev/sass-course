@@ -1,0 +1,16 @@
+body .heading {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: bold;
+  color: blue;
+  line-height: normal; }
+body .paragraph {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: bold;
+  color: blue;
+  line-height: normal; }
+
+/*# sourceMappingURL=mixin.css.map */
