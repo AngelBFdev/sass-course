@@ -1,13 +1,20 @@
+// define output values
+// call floor function on input-number
+// convert input-string to uppercase
+// calculate length of array1
+// join array 1 and array 2
+// lighten color1 by 50%
+
 $input-number: 6.5;
 $input-string: "fresco";
 $input-array1: 1 2 3;
 $input-array2: 4 5 6;
 $input-color1: rgb(0, 0, 200);
-$output-number-floor: "";
-$output-string-upper: "";
-$output-array1-length: "";
-$output-arrayjoin: "";
-$output-color1-lighten: "";
+$output-number-floor: floor($input-number);
+$output-string-upper: to-upper-case($input-string);
+$output-array1-length: length($input-array1);
+$output-arrayjoin: join($input-array1, $input-array2, auto );
+$output-color1-lighten: lighten($input-color1,50%);
 
 // required styles for input/output
 

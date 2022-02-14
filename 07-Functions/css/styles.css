@@ -27,18 +27,18 @@ section {
   background: #0000c8; }
 
 .output-number-floor::after {
-  content: ""; }
+  content: "6"; }
 
 .output-string-upper::after {
-  content: ""; }
+  content: "FRESCO"; }
 
 .output-array1-length::after {
-  content: ""; }
+  content: "3"; }
 
 .output-array1-and-array2-join::after {
-  content: ""; }
+  content: "1 2 3 4 5 6"; }
 
 .output-color1-lighten::after {
-  background: ""; }
+  background: #c8c8ff; }
 
 /*# sourceMappingURL=styles.css.map */
